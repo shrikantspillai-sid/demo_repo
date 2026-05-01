@@ -1,1 +1,36 @@
+# Write a program to check palindrome.
+user_input=input("Enter the string: ")
+
+reverse_input = user_input[::-1]
+
+if user_input == reverse_input:
+  print("Its a palindrome")
+else:
+  print("It's not a palindrome")
+
+#Write program count the blank spaces
+user_input = input("Enter the text")
+
+space_count = user_input.count(' ')
+print(space_count)
+
+#Write a program to Reversing a String without using reverse().
+user_input = input("Enter the input: ")
+reversed_text = ""
+
+for i in range(len(user_input) - 1, -1, -1):
+    reversed_text += user_input[i]
+print(reversed_text)
+
+#Write a program to count no. of vowels and print all the vowels.
+user_input = input("Enter the strings: ")
+
+vowels = [char for char in user_input if char.lower() in 'aeiou']
+
+print(f"Count: {len(vowels)}")
+print(f"Vowels: {' '.join(vowels)}")
+
+
+
+
 
